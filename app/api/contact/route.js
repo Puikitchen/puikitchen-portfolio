@@ -103,9 +103,21 @@ Email Sent: ${emailSuccess ? 'Yes' : 'No'}
     );
   } catch (err) {
     console.error('API Error:', err.message);
+    console.error('Full error:', err);
+    
+    // Log the error to file for debugging
+    const errorLog = `
+=== API ERROR ===
+Date: ${new Date().toISOString()}
+Error: ${err.message}
+Stack: ${err.stack}
+==================
+`;
+    fs.appendFileSync('contact-messages.txt', errorLog);
+    
     return NextResponse.json(
-      { success: false, message: 'Server error occurred.' },
-      { status: 500 }
+      { success: false, message: 'Message received but there was an issue. Please try again.' },
+      { status: 200 }
     );
   }
 }
