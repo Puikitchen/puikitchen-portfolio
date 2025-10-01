@@ -99,7 +99,7 @@ Email Sent: ${emailSuccess ? 'Yes' : 'No'}
           ? 'Message sent successfully! I will get back to you soon.'
           : 'Message received but email failed to send.',
       },
-      { status: emailSuccess ? 200 : 500 }
+      { status: 200 }
     );
   } catch (err) {
     console.error('API Error:', err.message);
