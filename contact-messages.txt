@@ -1,0 +1,140 @@
+# Contact Form Messages Log
+# This file will store all contact form messages until email is working
+
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:18:59.094Z
+Name: Test User
+Email: test@example.com
+Message: Test message
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:19:32.469Z
+Name: dadsadadas
+Email: puikitchen1021@gmail.com
+Message: dadada
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:21:22.265Z
+Name: Email Test
+Email: test@example.com
+Message: Testing email functionality
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:23:04.444Z
+Name: fafafsad
+Email: puikitchen1021@gmail.com
+Message: fafafasfsa
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:28:17.380Z
+Name: cascasca
+Email: puikitchen1021@gmail.com
+Message: fafdafsdfsdfs
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:31:02.434Z
+Name: dadasd
+Email: puikitchen1021@gmail.com
+Message: adsadadasd
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:43:11.067Z
+Name: cadada
+Email: puikitchen1021@gmail.com
+Message: dadsadadad
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:50:33.025Z
+Name: adadadad
+Email: puikitchen1021@gmail.com
+Message: safasgataeragfa
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:52:16.509Z
+Name: ffafafawfwf
+Email: puikitchen1021@gmail.com
+Message: adadafsafwaff
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T13:57:04.554Z
+Name: wfwefewffsdfsfsdfsdfsdfsdf
+Email: puikitchen1021@gmail.com
+Message: asadadafff
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T14:02:48.745Z
+Name: dadada
+Email: divyashnachetty@gmail.com
+Message: a,nmd,na nd amn 
+Email Sent: true
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T14:03:47.828Z
+Name: fafdasdada
+Email: divyashnachetty@gmail.com
+Message: sdasdada
+Email Sent: false
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T14:04:16.928Z
+Name: dadadasd
+Email: puikitchen1021@gmail.com
+Message: adadad
+Email Sent: true
+Error: None
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T21:23:59.787Z
+Name: afasfasdf
+Email: divyashnachetty@gmail.com
+Message: afasfasdfd
+Email Sent: No
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T21:29:58.179Z
+Name: xvsdwdv
+Email: divyashnachetty@gmail.com
+Message: dgfadfsdfw
+Email Sent: Yes
+==================
+
+=== NEW MESSAGE ===
+Date: 2025-09-30T21:30:19.132Z
+Name: sfsdwdfsd
+Email: puikitchen1021@gmail.com
+Message: fwefsdwdf
+Email Sent: Yes
+==================
