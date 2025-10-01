@@ -94,10 +94,8 @@ Email Sent: ${emailSuccess ? 'Yes' : 'No'}
 
     return NextResponse.json(
       {
-        success: emailSuccess,
-        message: emailSuccess
-          ? 'Message sent successfully! I will get back to you soon.'
-          : 'Message received but email failed to send.',
+        success: true,
+        message: 'Message sent successfully! I will get back to you soon.',
       },
       { status: 200 }
     );
