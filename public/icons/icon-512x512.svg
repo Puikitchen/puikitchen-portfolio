@@ -6,6 +6,6 @@
       <stop offset="100%" style="stop-color:#0d1224;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="512" height="512" fill="url(#grad)" stroke="#16f2b3" stroke-width="2"/>
-  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="128" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="white">PKC</text>
+  <rect width="512" height="512" fill="url(#grad)" rx="8"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="85.33333333333333" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="white">PKC</text>
 </svg>
