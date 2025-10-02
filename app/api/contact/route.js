@@ -2,7 +2,6 @@
 import 'dotenv/config';
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import fs from 'fs';
 
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
@@ -14,7 +13,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.GMAIL_PASSKEY,
   },
 });
-
 
 // HTML email template
 const generateEmailTemplate = (name, email, userMessage) => `
@@ -80,8 +78,8 @@ export async function POST(request) {
     // Send email
     const emailSuccess = await sendEmail(payload);
 
-    // Backup log
-    const logMessage = `
+    // Log message to Vercel logs
+    console.log(`
 === NEW MESSAGE ===
 Date: ${new Date().toISOString()}
 Name: ${name}
@@ -89,33 +87,38 @@ Email: ${email}
 Message: ${userMessage}
 Email Sent: ${emailSuccess ? 'Yes' : 'No'}
 ==================
-`;
-    fs.appendFileSync('contact-messages.txt', logMessage);
+    `);
 
-    return NextResponse.json(
-      {
-        success: true,
-        message: 'Message sent successfully! I will get back to you soon.',
-      },
-      { status: 200 }
-    );
+    if (emailSuccess) {
+      return NextResponse.json(
+        {
+          success: true,
+          message: 'Message sent successfully! I will get back to you soon.',
+        },
+        { status: 200 }
+      );
+    } else {
+      return NextResponse.json(
+        { success: false, message: 'Failed to send message. Please try again.' },
+        { status: 500 }
+      );
+    }
   } catch (err) {
     console.error('API Error:', err.message);
     console.error('Full error:', err);
-    
-    // Log the error to file for debugging
-    const errorLog = `
+
+    // Log error to Vercel logs
+    console.log(`
 === API ERROR ===
 Date: ${new Date().toISOString()}
 Error: ${err.message}
 Stack: ${err.stack}
 ==================
-`;
-    fs.appendFileSync('contact-messages.txt', errorLog);
-    
+    `);
+
     return NextResponse.json(
-      { success: false, message: 'Message received but there was an issue. Please try again.' },
-      { status: 200 }
+      { success: false, message: 'Server error. Please try again later.' },
+      { status: 500 }
     );
   }
 }
