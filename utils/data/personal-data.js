@@ -10,5 +10,5 @@ export const personalData = {
   facebook: 'https://www.facebook.com/puikitchen',
   linkedIn: 'https://www.linkedin.com/in/pui-kit-chen-717241313/',
   devUsername: "Puikitchen",
-  resume: "/Pui Kit Chen.pdf"
+  resume: "/PuiKitChen.pdf"
 }
