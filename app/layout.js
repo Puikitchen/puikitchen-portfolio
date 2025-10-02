@@ -13,6 +13,18 @@ export const metadata = {
   title: "PuiKitChen's Portfolio",
   description:
     "I'm a driven 4th-year Software Engineering student at the University of the South Pacific, pursuing my Bachelor's degree with a focus on building impactful, user-centered solutions. Passionate about coding, web development, and emerging technologies, I thrive on solving problems and turning ideas into reality.",
+  manifest: "/PWA/manifest.json",
+  themeColor: "#16f2b3",
+  viewport: "width=device-width, initial-scale=1",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Pui Kit Chen Portfolio"
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/profile.jpg"
+  }
 };
 
 export default function RootLayout({ children }) {

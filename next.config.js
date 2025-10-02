@@ -1,6 +1,12 @@
 const path = require('path')
+const withPWA = require('next-pwa')({
+  dest: 'PWA',
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === 'development'
+})
  
-module.exports = {
+module.exports = withPWA({
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -23,4 +29,4 @@ module.exports = {
       },
     ],
   },
-}
+})
