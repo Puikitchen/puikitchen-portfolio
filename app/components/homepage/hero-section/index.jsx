@@ -36,6 +36,7 @@ function HeroSection() {
               href={personalData.github}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              aria-label="Visit Pui Kit Chen's GitHub profile"
             >
               <BsGithub size={30} />
             </Link>
@@ -43,6 +44,7 @@ function HeroSection() {
               href={personalData.linkedIn}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              aria-label="Visit Pui Kit Chen's LinkedIn profile"
             >
               <BsLinkedin size={30} />
             </Link>
@@ -50,6 +52,7 @@ function HeroSection() {
               href={personalData.facebook}
               target='_blank'
               className="transition-all text-pink-500 hover:scale-125 duration-300"
+              aria-label="Visit Pui Kit Chen's Facebook profile"
             >
               <FaFacebook size={30} />
             </Link>
