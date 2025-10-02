@@ -13,7 +13,7 @@ export const metadata = {
   title: "PuiKitChen's Portfolio",
   description:
     "I'm a driven 4th-year Software Engineering student at the University of the South Pacific, pursuing my Bachelor's degree with a focus on building impactful, user-centered solutions. Passionate about coding, web development, and emerging technologies, I thrive on solving problems and turning ideas into reality.",
-  manifest: "/PWA/manifest.json",
+  manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
