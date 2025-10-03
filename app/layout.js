@@ -14,6 +14,25 @@ export const metadata = {
   description:
     "I'm a driven 4th-year Software Engineering student at the University of the South Pacific, pursuing my Bachelor's degree with a focus on building impactful, user-centered solutions. Passionate about coding, web development, and emerging technologies, I thrive on solving problems and turning ideas into reality.",
   manifest: "/manifest.json",
+  openGraph: {
+    title: "PuiKitChen's Portfolio",
+    description: "Professional Software Developer Portfolio showcasing skills, projects, and experience",
+    images: [
+      {
+        url: "/icons/icon-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "PuiKitChen Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PuiKitChen's Portfolio",
+    description: "Professional Software Developer Portfolio showcasing skills, projects, and experience",
+    images: ["/icons/icon-512x512.png"],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
