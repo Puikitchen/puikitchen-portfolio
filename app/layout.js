@@ -21,7 +21,7 @@ export const metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/profile.jpg"
+    apple: "/apple-touch-icon.png"
   }
 };
 
